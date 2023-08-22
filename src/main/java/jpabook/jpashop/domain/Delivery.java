@@ -14,8 +14,7 @@ public class Delivery {
     @Column(name = "delivery_id")
     private Long id;
 
-    @OneToOne
-    @JoinColumn(name = "delivery_id")
+    @OneToOne(mappedBy = "delivery")
     private Order order;
 
     @Embedded

@@ -21,6 +21,6 @@ public class Member {
     @Embedded
     private Address address;;
 
-    @OneToMany(mappedBy = "member_id") // 읽기 전용
+    @OneToMany(mappedBy = "member") // 읽기 전용
     private List<Order> orders = new ArrayList<Order>();
 }
