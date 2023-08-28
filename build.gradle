@@ -34,6 +34,7 @@ dependencies {
 	//JUnit4 추가
 	testImplementation("org.junit.vintage:junit-vintage-engine") {
 	exclude group: "org.hamcrest", module: "hamcrest-core"
+	implementation 'org.hibernate.validator:hibernate-validator:7.0.1.Final'
 	}
 }
 
